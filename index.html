@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programmers channel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
+        @keyframes rotate {
+            to { --angle: 360deg; }
+        }
+        .rgb-border {
+            --angle: 0deg;
+            animation: rotate 2s linear infinite;
+            background: conic-gradient(from var(--angle), #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #9900ff, #ff0000);
+        }
+    </style>
+</head>
+<body class="w-full h-screen bg-[url('./img1.png')] bg-cover bg-center bg-no-repeat">
+    <header class="w-full h-[75px] border-b-[1px] rounded-b-[25px] bg-[#434343]/40 border-b-black flex justify-center items-center gap-[35px]">
+        <div class="text-white text-xl text-bold">👨‍💻 ساعد غيرك عشان غيرك يساعدك 🤝</div>
+    </header>
+    <div class="rgb-border w-[85%] h-[80%] mx-[7%] my-[5%] rounded-[28px] p-[3px]">
+        <main class="relative w-full h-full bg-[#222] rounded-[25px] p-4">
+            <section class="w-full min-h-[20%] bg-[#333333]/90 rounded-[25px] mb-[35px]">
+                <div class="text-white flex justify-center text-bold text-[115%]">مرحبا في مجتمعنا 👋🏻</div>
+                <div class="mx-[10px] mt-[15px] text-white">
+                أحنا مجتمع صغير للمبرمجين بنساعد بعض بدأنا من الصفر متابع و هدفنا نوصل 1000 متابع
+                </div>
+            </section>
+            <section class="w-full min-h-[20%] bg-[#333333]/90 rounded-[25px] mb-[35px]">
+                <div class="text-white flex justify-center text-bold text-[115%]">هتلاقي ايه عندنا 👇</div>
+                <div class="mx-[10px] mt-[15px] text-white">
+                مكتبات برمجية و قوالب مفتوحة المصدر و مشاريع و مواقع جامدين 
+                </div>
+            </section>
+            <section class="w-full min-h-[20%] bg-[#333333]/90 rounded-[25px] mb-[35px]">
+                <div class="text-white flex justify-center text-bold text-[115%]">
+                    القناة معمولة ل مين 👇
+                </div>
+                <div class="mx-[10px] mt-[15px] text-white">
+                    لأي شخص مهتم  ب مجال تطوير المواقع أو لأي مبرمج مواقع يريد مكتبات لمساعدته في برمجة 
+                </div>
+            </section>
+            <section class="w-full min-h-[20%] bg-[#333333]/90 rounded-[25px] mb-[35px]">
+                <div class="mr-[25px] text-white">
+                    لينك القناة : 
+                    <br> <a href="https://whatsapp.com/channel/0029Vb8g0GB8F2pM1Va5kn2X" class="text-blue-700">Link To Channel</a>
+                </div>
+                <div class="mr-[25px] text-white">
+                    لينك GitHub : 
+                    <br> <a href="https://github.com/Youssef50010" class="text-blue-700">Link To GitHub</a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="mt-[25px] rounded-t-[15px] border-t-[#888] border-t-[2px] flex justify-center items-center gap-[35px]">
+        <div class="text-gray-500 text-[90%]">تواصل معنا • سياسة خصوصية محفوظة • جميع الحقوق محفوظة ©️</div>
+    </footer>
+</body>
+</html>
